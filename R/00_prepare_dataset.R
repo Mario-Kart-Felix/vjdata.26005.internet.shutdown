@@ -57,6 +57,7 @@ tidy_data <- social_logical(an_data)
 tidy_data$year <- year(tidy_data$start_date)
 tidy_data$month <- month(tidy_data$start_date)
 
+
 # then filter out date columsn
 tidy_data <- tidy_data %>%
   select(-start_date, -end_date)
